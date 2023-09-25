@@ -54,8 +54,8 @@ public class Role {
     @Override
     public int hashCode() {
         int prime=31, result = 1;
-        result = prime * result + getId().hashCode();
-        result = prime * result + getName().hashCode();
+        result += getId() == null ? 0 : getId().hashCode() + 31 * result;
+        result += getName() == null ? 0 : getName().hashCode() + 31 * result;
         return result;
     }
 

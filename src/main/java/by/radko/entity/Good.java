@@ -63,11 +63,11 @@ public class Good {
     @Override
     public int hashCode() {
         int prime = 31, result = 1;
-        result = prime * result + getId().hashCode();
-        result = prime * result + getName().hashCode();
-        result = prime * result + getPrice().hashCode();
-        result = prime * result + getBarcode().hashCode();
-        result = prime * result + getOnSale().hashCode();
+        result += getId() == null ? 0 : getId().hashCode() + 31 * result;
+        result += getName() == null ? 0 : getName().hashCode() + 31 * result;
+        result += getPrice() == null ? 0 : getPrice().hashCode() + 31 * result;
+        result += getBarcode() == null ? 0 : getBarcode().hashCode() + 31 * result;
+        result += getOnSale() == null ? 0 : getOnSale().hashCode() + 31 * result;
         return result;
     }
 

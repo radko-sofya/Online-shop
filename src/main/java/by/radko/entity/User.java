@@ -63,11 +63,11 @@ public class User {
     @Override
     public int hashCode() {
         int prime = 31, result = 1;
-        result = prime * result + getId().hashCode();
-        result = prime * result + getUsername().hashCode();
-        result = prime * result + getPassword().hashCode();
-        result = prime * result + getCreatedDate().hashCode();
-        result = prime * result + getActive().hashCode();
+        result += getId() == null ? 0 : getId().hashCode() + 31 * result;
+        result += getUsername() == null ? 0 : getUsername().hashCode() + 31 * result;
+        result += getPassword() == null ? 0 : getPassword().hashCode() + 31 * result;
+        result += getActive() == null ? 0 : getActive().hashCode() + 31 * result;
+        result += getCreatedDate() == null ? 0 : getCreatedDate().hashCode() + 31 * result;
         return result;
     }
 

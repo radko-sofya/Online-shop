@@ -12,5 +12,7 @@ public class Main {
         Role role1 = new Role(11L, "h");
         System.out.println(user);
         System.out.println(role.equals(role1));
+        role1.setName(null);
+        System.out.println(role1.hashCode());
     }
 }
