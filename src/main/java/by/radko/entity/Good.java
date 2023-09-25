@@ -60,6 +60,7 @@ public class Good {
         this.onSale = onSale;
     }
 
+
     @Override
     public int hashCode() {
         int prime = 31, result = 1;
