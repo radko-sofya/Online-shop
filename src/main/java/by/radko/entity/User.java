@@ -52,7 +52,7 @@ public class User {
         this.password = password;
     }
 
-    public void setActive(boolean active) {
+    public void setActive(Boolean active) {
         this.active = active;
     }
 
@@ -62,7 +62,7 @@ public class User {
 
     @Override
     public int hashCode() {
-        int prime = 31, result = 1;
+        int result = 31;
         result += getId() == null ? 0 : getId().hashCode() + 31 * result;
         result += getUsername() == null ? 0 : getUsername().hashCode() + 31 * result;
         result += getPassword() == null ? 0 : getPassword().hashCode() + 31 * result;

@@ -86,7 +86,7 @@ public class Order {
 
     @Override
     public int hashCode() {
-        int prime=31, result = 1;
+        int result = 31;
         result += getId() == null ? 0 : getId().hashCode() + 31 * result;
         result += getCreatedDate() == null ? 0 : getCreatedDate().hashCode() + 31 * result;
         result += getStatus() == null ? 0 : getStatus().hashCode() + 31 * result;

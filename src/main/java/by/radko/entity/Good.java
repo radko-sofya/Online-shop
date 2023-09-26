@@ -56,13 +56,13 @@ public class Good {
         this.barcode = barcode;
     }
 
-    public void setOnSale(boolean onSale) {
+    public void setOnSale(Boolean onSale) {
         this.onSale = onSale;
     }
 
     @Override
     public int hashCode() {
-        int prime = 31, result = 1;
+        int result = 31;
         result += getId() == null ? 0 : getId().hashCode() + 31 * result;
         result += getName() == null ? 0 : getName().hashCode() + 31 * result;
         result += getPrice() == null ? 0 : getPrice().hashCode() + 31 * result;
